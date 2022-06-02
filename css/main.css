@@ -953,7 +953,6 @@ address {
 
 .p-card {
   width: 100%;
-  border: 1px solid #EEEEEE;
 }
 
 .p-card-link {
@@ -974,6 +973,7 @@ address {
   padding-right: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
+  border: 1px solid #EEEEEE;
 }
 
 .projects h3 {
