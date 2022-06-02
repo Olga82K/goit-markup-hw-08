@@ -952,14 +952,16 @@ address {
 }
 
 .p-card {
+  width: 100%;
   border: 1px solid #EEEEEE;
 }
 
 .p-card-link {
-  width: 100%;
+  display: block;
+  box-shadow: none;
   transition: box-shadow 250ms var(--cubic-bezier);
 }
-.p-card-link:focus, .p-card-link :hover {
+.p-card-link:focus, .p-card-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
