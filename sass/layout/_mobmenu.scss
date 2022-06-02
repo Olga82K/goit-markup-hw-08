@@ -1,0 +1,129 @@
+
+
+.mob-menu-open-btn {
+    padding: 0;
+    margin-left: auto;
+    @extend %placeholder1;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: var(--title-text-color);
+    border: none;
+    transition: color 250ms var(--cubic-bezier);
+    
+    &:hover, :focus {
+    fill: var(--accent-color);}
+}
+
+.mob-menu {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 10px 15px 48px 40px;
+    background-color: var(--primery-bg-color);
+    overflow-y: auto;
+
+        &__bottom {
+        padding-top: 30px;}
+
+       
+}
+
+.mob-menu__list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .link.mob-current {
+        color: var(--accent-color);
+    
+        &::after {color: var(--accent-color);
+    }
+    }
+    
+}
+
+
+.mob-menu__close-btn {
+    padding: 0;
+    margin-left: auto;
+    @extend %placeholder1;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: var(--title-text-color);
+    border: none;
+    transition: color 250ms var(--cubic-bezier);
+    
+    &:hover, :focus {
+    fill: var(--accent-color);}
+}
+
+.mob-site-nav__link {
+    color: var(--title-text-color); 
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover, :focus {
+    color: var(--accent-color);}
+}
+
+.mob-site-nav__item:not(:last-child){
+    margin-bottom: 32px;
+}
+
+.mob-tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.176;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+.mob-email {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--primery-text-color);
+}
+
+.mob-site-contact__item:not(:last-child){
+    margin-bottom: 32px;
+}
+
+.mob-social {
+    display: flex;
+    padding-top: 64px;
+}
+
+.mob-social__list {
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+.mob-social__item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222;
+    letter-spacing: 0.02em;
+    color: var(--accent-color); 
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+

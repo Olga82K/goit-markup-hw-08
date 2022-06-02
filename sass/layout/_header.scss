@@ -1,0 +1,130 @@
+
+.page-header {
+    display: flex;
+    border-bottom: 1px solid #ECECEC;
+    padding: 10px 15px 0 15px;
+       
+        &__style {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        }
+
+        .link.current {
+            color: var(--accent-color);
+        }
+}
+
+.site-nav {
+    display: flex;
+
+    &__item:not(:last-child){
+        margin-right: 50px;
+    }
+}
+
+.site-nav__link {
+    position: relative;
+    display: block;
+    padding: 32px 0;
+    color: #212121; 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover, :focus {
+    color: var(--accent-color);}
+}
+
+.site-contact__item:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.site-contact__link {
+    display: flex;
+    color: #757575; 
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover, :focus {
+    color: var(--accent-color);}
+}
+
+.site-contact__icon {
+    fill:currentColor; 
+    margin-right: 10px;
+} 
+
+@media screen and (max-width: 767px) {
+
+    .site-nav, .site-contact {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip: rect(0 0 0 0);
+        clip-path: inset(100%);
+        overflow: hidden;   
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .mob-menu-open-btn {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip: rect(0 0 0 0);
+        clip-path: inset(100%);
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+   
+    .page-header {
+        &__style {
+            flex-direction: none;
+            justify-content: left;
+            }
+    }
+
+    .site-nav {
+        display: flex;
+        margin-left: 93px;
+    }
+
+
+    .site-contact{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    
+
+        &__item:not(:last-child){
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
+
+        &__link {
+            font-size: 14px;
+            line-height: 1.143;
+        }
+    }
+}

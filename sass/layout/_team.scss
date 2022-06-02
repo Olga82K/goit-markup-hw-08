@@ -1,0 +1,121 @@
+
+.team {
+    background-color: #F5F4FA;
+}
+
+.team__title {
+    color: var(--title-text-color); 
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team__card {
+    width: 100%; 
+    background-color: var(--primery-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team__foto {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.team__caption {
+    text-align: center;
+    padding-bottom: 24px;
+
+
+    .person {
+    color:#212121;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    
+    margin-bottom: 10px;}
+
+    .position {
+        font-size: 16px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+}
+
+.team-networks {
+    display: flex;
+    justify-content: center;
+    
+        &__link {
+        @extend %placeholder1;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        color: #AFB1B8;
+        transition: background-color 250ms var(--cubic-bezier),
+        color 250ms var(--cubic-bezier);
+    
+            &:hover, :focus {
+            background-color:var(--accent-color);
+            color: #FFFFFF;}}
+            
+        .item + .item {
+                margin-left: 10px;}    
+        .icon {
+            fill: currentColor;}
+}
+
+@media screen and (max-width: 767px) {
+    .team__card:not(:last-child) {
+    margin-bottom: 30px;
+    }  
+}
+
+@media screen and (min-width: 768px) {
+
+    .team {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .team__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .team__card {
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px; 
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .team {
+        padding-left:15px;
+        padding-right: 15px;
+    }
+
+   .team__list {
+    flex-wrap: nowrap;
+   }
+    .team__title {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+    .team__card {
+        width: 270px;
+        margin: 0;
+    }
+        .team__card:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+
