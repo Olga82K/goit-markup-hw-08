@@ -131,16 +131,23 @@
         .projects-list {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            margin-left: -30px;
+            margin-bottom: -30px;
         }
         .p-card {
             width: calc(50% - 30px);
-        }
-
-        .padbot {
-            padding-bottom: 56px;
+            margin-left: 30px;
+            margin-bottom: 30px;
         }
     }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .padbot {
+        padding-bottom: 56px;
+    }
+}
+
 
     @media screen and (min-width: 1200px) {
       
@@ -151,16 +158,8 @@
             }
              
             .p-card {
-                width: calc(33.33333% - 60px);
-                &:nth-child(-n + 8) {
-                margin-bottom: 0px; }
-                &:nth-child(-n + 6) {
-                    margin-bottom: 30px;
+                width: calc(100%/3 - 30px);
             }
-             }
+            }
             
           
-            .padbot {
-                padding-bottom: 20px;
-            }
-    }

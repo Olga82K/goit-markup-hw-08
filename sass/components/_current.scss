@@ -3,13 +3,17 @@
 
     &::after {color: var(--accent-color);
     position: absolute;
-    top: 96%;
+    top: 290%;
     content: "";
     display: block;
     width: 100%;
     height: 4px;
     border-radius: 2px;
     background-color: var(--accent-color);
+
+  @media screen and (min-width: 1200px) {
+    top: 260%;
+  }
 }
 }
 

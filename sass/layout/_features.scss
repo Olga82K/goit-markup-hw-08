@@ -30,12 +30,13 @@
     .features__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        margin-left: -30px;
+        margin-bottom: -30px;
     }
     .features__item {
         width: calc(50% - 30px);
-        &:nth-child(-n + 2) {
-            margin-bottom: 30px;}
+        margin-left: 30px;
+        margin-bottom: 30px;
     }
     .features__title {
         text-align: left;
@@ -50,13 +51,7 @@
     }
     
     .features__item {
-        width: 270px;
-        &:nth-child(-n + 2) {
-            margin-bottom: 0px;}
-
-        &:not(:last-child) {
-        margin-right: 30px;}
-         
+        width: calc(25% - 30px);
     }
 }
       

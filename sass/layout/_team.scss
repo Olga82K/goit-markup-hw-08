@@ -83,13 +83,13 @@
     .team__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        margin-left: -30px;
+        margin-bottom: -30px;
     }
     .team__card {
         width: calc(50% - 30px);
-        &:nth-child(-n + 2) {
-            margin-bottom: 30px;}
-        
+        margin-left: 30px;
+        margin-bottom: 30px;
     }
 }
 
@@ -104,14 +104,8 @@
         margin-bottom: 50px;
     }
     .team__card {
-        width: 270px;
-        &:nth-child(-n + 2) {
-            margin-bottom: 0px;}
-
-        &:not(:last-child) {
-        margin-right: 30px;
+        width: calc(100%/3 - 30px);
     }
-}
 }
 
 
