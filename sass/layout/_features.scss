@@ -27,18 +27,15 @@
 
 @media screen and (min-width: 768px) {
 
-    .features {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
     .features__list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     .features__item {
-        width: calc((100% - 4 * 15px) / 2);
-        margin: 15px; 
+        width: calc(50% - 30px);
+        &:nth-child(-n + 2) {
+            margin-bottom: 30px;}
     }
     .features__title {
         text-align: left;
@@ -48,25 +45,20 @@
 
 @media screen and (min-width: 1200px) {
     
-    .features {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .features__list {
+   .features__list {
        flex-wrap: nowrap;
     }
     
     .features__item {
         width: 270px;
-        margin: 0;
+        &:nth-child(-n + 2) {
+            margin-bottom: 0px;}
+
+        &:not(:last-child) {
+        margin-right: 30px;}
          
     }
-    .features__item:not(:last-child) {
-        margin-right: 30px;
-    }  
-
-    }
+}
       
    
 
